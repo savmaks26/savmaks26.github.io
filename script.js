@@ -128,8 +128,8 @@ function start1() {
       let a = new ArrayBuffer(5),
         b = new DataView(a);
       b.setUint8(0, 191);
-      b.setUint16(1, (1013 / 10) * 1, !0);
-      b.setUint16(3, (937 / 10) * 1, !0);
+      b.setUint16(1, (1000 / 10) * 1, !0);
+      b.setUint16(3, (1000 / 10) * 1, !0);
       d.send(a);
     }
     function ping() {
