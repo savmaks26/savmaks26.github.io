@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=2" />
+    <link
+      rel="icon"
+      href="icon.png"
+    />
+    <title>Powerline bot client</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="parent">
+      <div style="width: 780px" class="block">
+        <h1 id="message" class="message">...</h1>
+        <input
+          onkeyup="tr(event)"
+          class="input"
+          id="nick"
+          placeholder="bot's nick?"
+        />
+        <input
+          onkeyup="tr(event)"
+          class="input"
+          id="interval"
+          placeholder="spawn time in ms?"
+        />
+        <input
+          onkeyup="tr(event)"
+          class="input"
+          id="time"
+          placeholder="lifetime in ms?"
+        />
+        <button class="button" onclick="start()">
+          START
+        </button>
+        <button class="button" onclick="reload()">
+          RELOAD
+        </button>
+        <button class="button" onclick="stop()">
+          STOP
+        </button>
+        <form id="options">
+          <div>
+            <input id="cb1" type="checkbox" name="checkbox" value="1" />Enable
+            random bot talk (0-9)
+          </div>
+          <div>
+            <input id="cb2" type="checkbox" name="checkbox" value="2" />Enable
+            random start turnpoint
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
