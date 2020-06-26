@@ -71,7 +71,7 @@ function start() {
   if (r) {
     document.getElementById("message").style = "color: red";
     document.getElementById("message").innerHTML =
-      "Bots have already been launched!";
+      "Bots have already been launching!";
     return 2;
   }
   b = document.getElementById("interval").value;
@@ -83,7 +83,7 @@ function start() {
     return 1;
   }
   document.getElementById("message").style = "color: green";
-  document.getElementById("message").innerHTML = "Bots have been launched!";
+  document.getElementById("message").innerHTML = "Bots have been launching!";
   setCookie("a1", nick, { secure: true, "max-age": 9999999999 });
   setCookie("a2", b, { secure: true, "max-age": 9999999999 });
   setCookie("a3", a, { secure: true, "max-age": 9999999999 });
