@@ -116,7 +116,7 @@ function start1() {
       ping();
       sleep(100);
       sendNick(nick);
-      sleep(200);
+      sleep(500);
       if (a5 - 0 == 1) sendTurnPoint(gri(1, 4));
       if (a4 - 0 == 1) {
         let gg2 = setInterval(function() {
